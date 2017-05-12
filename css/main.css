@@ -17,31 +17,46 @@
   height: 85%;
   left: 0;
   top: 0;
-  text-align: center;
 }
 
 #thumbnails {
   background-color: #000;
   position: absolute;
   width: 100%;
+  overflow: auto;
   height: 15%;
   left: 0%;
   top: 85%;
+  font-size: 0;
   text-align: center;
+}
+
+.wrapper, .thumbnail-wrapper {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
   font-size: 0;
 }
 
-#main img {
+.wrapper-child, .thumbnail-wrapper-child {
+  background-color: pink;
+  position: relative;
+  display: inline-block;
   height: 100%;
-  max-width: 100%;
 }
-#thumbnails img {
+
+img{
   height: 100%;
   display: inline-block;
+}
+
+#thumbnails img {
   border-width: 2px 1px;
   border-style: solid;
   border-color: #000;
   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
